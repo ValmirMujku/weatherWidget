@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Weather from "./Weather";
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
+      <div className="border p-4 bg-dark text-warning m-5 border-danger border-3 rounded-3">
+        <h1 className="text-center fs-bold text-light">Weather Widget</h1>
+        <Weather />
+      </div>
     </div>
   );
 }
